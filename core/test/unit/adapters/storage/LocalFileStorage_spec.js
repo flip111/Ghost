@@ -157,7 +157,7 @@ describe('Local File System Storage', function () {
         it('success', function (done) {
             localFileStore.read({path: 'ghost-logo.png'})
                 .then(function (bytes) {
-                    bytes.length.should.eql(8638);
+                    bytes.length.should.eql(6806);
                     done();
                 });
         });
@@ -165,7 +165,7 @@ describe('Local File System Storage', function () {
         it('success', function (done) {
             localFileStore.read({path: '/ghost-logo.png/'})
                 .then(function (bytes) {
-                    bytes.length.should.eql(8638);
+                    bytes.length.should.eql(6806);
                     done();
                 });
         });
